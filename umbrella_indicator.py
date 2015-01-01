@@ -28,7 +28,7 @@ while True:
 	forecast = request.json
 	
 	# pop_value is the 'probability of precipitation'
-	pop_value = forecast['forecast']['txt_forecast']['forecastday'][today]['pop']
+	pop_value = forecast['forecast']['txt_forecast']['forecastday'][day]['pop']
 	pop_value = int(pop_value)
 	
 	if pop_value >= 30:
